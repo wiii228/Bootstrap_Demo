@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.12.2.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </head>
 <body style="padding-bottom: 300px;">
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -152,7 +158,8 @@
             <div class="col-sm-10">
                 <div class="checkbox">
                     <label class="checkbox-inline" for="tv"><input id="tv" name="hobbies" type="checkbox"> TV</label>
-                    <label class="checkbox-inline" for="study"><input id="study" name="hobbies" type="checkbox"> study</label>
+                    <label class="checkbox-inline" for="study"><input id="study" name="hobbies" type="checkbox">
+                        study</label>
                 </div>
             </div>
         </div>
@@ -197,6 +204,14 @@
             </div>
         </div>
     </div>
+    <br>
+    <button class="btn btn-primary" data-toggle="popover" title="test title..." data-content="content..." data-trigger="hover">popover
+        button
+    </button>
+    <a href="" data-toggle="tooltip" title="test...">tooltip test</a>
+    <button class="btn btn-primary" data-toggle="tooltip" title="test title..." data-content="content..." data-placement="right">tool tip
+        button
+    </button>
     <br>
     <blockquote>
         Day1
